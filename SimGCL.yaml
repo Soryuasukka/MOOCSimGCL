@@ -1,0 +1,23 @@
+training.set: ./dataset/mooc_cube/train.txt
+test.set: ./dataset/mooc_cube/test.txt
+
+model:
+  name: SimGCL
+  type: graph
+
+item.ranking.topN: [20,100]
+
+embedding.size: 64
+max.epoch: 10
+batch.size: 2048
+learning.rate: 0.0001
+reg.lambda: 0.001
+
+SimGCL:
+  n_layer: 2
+  lambda: 0.5
+  eps: 0.1
+  item_concept_file: ./dataset/mooc_cube/item_concept.txt
+  prerequisite_file: ''
+
+output: ./results/
