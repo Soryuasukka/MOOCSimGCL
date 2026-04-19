@@ -2,7 +2,7 @@ training.set: ./dataset/mooc_cube/train.txt
 test.set: ./dataset/mooc_cube/test.txt
 
 model:
-  name: SimGCL
+  name: MoocGCL
   type: graph
 
 item.ranking.topN: [20,100]
